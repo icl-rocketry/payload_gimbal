@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name motorboard-rescue)(type Legacy)(uri ${KIPRJMOD}/motorboard-rescue.lib)(options "")(descr ""))
+)

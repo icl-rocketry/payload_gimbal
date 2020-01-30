@@ -14,14 +14,14 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega328-AU U?
+L motorboard-rescue:ATmega328-AU-MCU_Microchip_ATmega U?
 U 1 1 5E32C8DF
-P 5750 4050
-F 0 "U?" H 5550 5550 50  0000 C CNN
-F 1 "ATmega328-AU" H 6050 2400 50  0000 C CNN
-F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 5750 4050 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 5750 4050 50  0001 C CNN
-	1    5750 4050
+P 5350 4050
+F 0 "U?" H 5150 5550 50  0000 C CNN
+F 1 "ATmega328-AU" H 5650 2400 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 5350 4050 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 5350 4050 50  0001 C CNN
+	1    5350 4050
 	1    0    0    -1  
 $EndComp
 $Sheet
