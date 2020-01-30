@@ -50,4 +50,31 @@ F 3 "" H 5100 2400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4900 2400 5100 2400
+$Comp
+L DAQ1:TPS63070-iclr U?
+U 1 1 5E32E8F5
+P 9250 1750
+F 0 "U?" H 9250 2416 50  0000 C CNN
+F 1 "TPS63070-iclr" H 9250 2325 50  0000 C CNN
+F 2 "iclr-fp:Texas_PowerVFQFN_15" H 9100 1750 50  0001 L BNN
+F 3 "" H 9250 1750 50  0001 L BNN
+F 4 "https://www.digikey.com/product-detail/en/texas-instruments/TPS63070RNMT/296-44764-1-ND/6193751?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 9100 1750 50  0001 L BNN "Field4"
+F 5 "296-44764-1-ND" H 9100 1750 50  0001 L BNN "Field5"
+F 6 "VQFN-15 Texas Instruments" H 9100 1750 50  0001 L BNN "Field6"
+F 7 "Texas Instruments" H 9100 1750 50  0001 L BNN "Field7"
+F 8 "Conv DC-DC 2V to 16V Step Down/Step Up Single-Out 2.5V to 9V 2A 15-Pin VQFN-HR T/R" H 9100 1750 50  0001 L BNN "Field8"
+	1    9250 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L DAQ1:TPS2412PW-Power_Management U?
+U 1 1 5E331112
+P 5800 4550
+F 0 "U?" H 5800 5131 50  0000 C CNN
+F 1 "TPS2412PW-Power_Management" H 5800 5040 50  0000 C CNN
+F 2 "" H 7900 4350 50  0001 C CNN
+F 3 "" H 7900 4350 50  0001 C CNN
+	1    5800 4550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
