@@ -277,4 +277,26 @@ F 3 "" H 4850 2500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4850 2300 5150 2300
+Wire Wire Line
+	6350 2800 6550 2800
+Wire Wire Line
+	6350 2700 6550 2700
+Wire Wire Line
+	6350 2600 6550 2600
+Wire Wire Line
+	6350 4000 6550 4000
+Wire Wire Line
+	6350 4100 6550 4100
+Text GLabel 6550 2600 2    50   Input ~ 0
+MOSI
+Text GLabel 6550 2700 2    50   Input ~ 0
+MISO
+Text GLabel 6550 2800 2    50   Input ~ 0
+SCK
+Text GLabel 6550 4000 2    50   Input ~ 0
+RX
+Text GLabel 6550 4100 2    50   Input ~ 0
+TX
+Text GLabel 7850 3800 2    50   Input ~ 0
+DTR
 $EndSCHEMATC
