@@ -371,4 +371,16 @@ U 5E41532A
 F0 "H-Bridge" 50
 F1 "H-Bridge.sch" 50
 $EndSheet
+Wire Wire Line
+	8100 3150 8300 3150
+Text GLabel 8300 3150 2    50   Input ~ 0
+T1
+Wire Wire Line
+	8100 1250 8300 1250
+Wire Wire Line
+	8100 1350 8300 1350
+Text GLabel 8300 1250 2    50   Input ~ 0
+T2
+Text GLabel 8300 1350 2    50   Input ~ 0
+T3
 $EndSCHEMATC

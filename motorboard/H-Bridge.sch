@@ -17,6 +17,8 @@ $Comp
 L Motor:Motor_DC M?
 U 1 1 5E41C8CC
 P 3800 3350
+AR Path="/5E41C8CC" Ref="M?"  Part="1" 
+AR Path="/5E41532A/5E41C8CC" Ref="M?"  Part="1" 
 F 0 "M?" V 4095 3300 50  0000 C CNN
 F 1 "Motor_DC" V 4004 3300 50  0000 C CNN
 F 2 "" H 3800 3260 50  0001 C CNN
@@ -28,6 +30,8 @@ $Comp
 L Device:D D?
 U 1 1 5E41C8D2
 P 3500 2850
+AR Path="/5E41C8D2" Ref="D?"  Part="1" 
+AR Path="/5E41532A/5E41C8D2" Ref="D?"  Part="1" 
 F 0 "D?" V 3454 2929 50  0000 L CNN
 F 1 "D" V 3545 2929 50  0000 L CNN
 F 2 "" H 3500 2850 50  0001 C CNN
@@ -39,6 +43,8 @@ $Comp
 L Device:D D?
 U 1 1 5E41C8D8
 P 4200 2850
+AR Path="/5E41C8D8" Ref="D?"  Part="1" 
+AR Path="/5E41532A/5E41C8D8" Ref="D?"  Part="1" 
 F 0 "D?" V 4154 2929 50  0000 L CNN
 F 1 "D" V 4245 2929 50  0000 L CNN
 F 2 "" H 4200 2850 50  0001 C CNN
@@ -50,6 +56,8 @@ $Comp
 L Device:D D?
 U 1 1 5E41C8DE
 P 3500 3850
+AR Path="/5E41C8DE" Ref="D?"  Part="1" 
+AR Path="/5E41532A/5E41C8DE" Ref="D?"  Part="1" 
 F 0 "D?" V 3454 3929 50  0000 L CNN
 F 1 "D" V 3545 3929 50  0000 L CNN
 F 2 "" H 3500 3850 50  0001 C CNN
@@ -61,6 +69,8 @@ $Comp
 L Device:D D?
 U 1 1 5E41C8E4
 P 4200 3850
+AR Path="/5E41C8E4" Ref="D?"  Part="1" 
+AR Path="/5E41532A/5E41C8E4" Ref="D?"  Part="1" 
 F 0 "D?" V 4154 3929 50  0000 L CNN
 F 1 "D" V 4245 3929 50  0000 L CNN
 F 2 "" H 4200 3850 50  0001 C CNN
@@ -72,6 +82,8 @@ $Comp
 L power:GND #PWR?
 U 1 1 5E41C8EA
 P 3850 4200
+AR Path="/5E41C8EA" Ref="#PWR?"  Part="1" 
+AR Path="/5E41532A/5E41C8EA" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 3850 3950 50  0001 C CNN
 F 1 "GND" H 3855 4027 50  0000 C CNN
 F 2 "" H 3850 4200 50  0001 C CNN
@@ -85,6 +97,7 @@ U 1 1 5E41C8F0
 P 3850 2550
 AR Path="/5DAD2180/5E41C8F0" Ref="#PWR?"  Part="1" 
 AR Path="/5E41C8F0" Ref="#PWR?"  Part="1" 
+AR Path="/5E41532A/5E41C8F0" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 3850 2400 50  0001 C CNN
 F 1 "+10V" H 3865 2723 50  0000 C CNN
 F 2 "" H 3850 2550 50  0001 C CNN
@@ -120,4 +133,142 @@ Wire Wire Line
 Connection ~ 3850 4000
 Wire Wire Line
 	3850 4000 4200 4000
+$Comp
+L Transistor_BJT:BC807 Q?
+U 1 1 5E420AAC
+P 3000 3000
+F 0 "Q?" H 3191 2954 50  0000 L CNN
+F 1 "BC807" H 3191 3045 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3200 2925 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC807.pdf" H 3000 3000 50  0001 L CNN
+	1    3000 3000
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC807 Q?
+U 1 1 5E421FC8
+P 4600 3000
+F 0 "Q?" H 4450 2850 50  0000 L CNN
+F 1 "BC807" H 4150 3150 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4800 2925 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC807.pdf" H 4600 3000 50  0001 L CNN
+	1    4600 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC817 Q?
+U 1 1 5E423092
+P 3000 3700
+F 0 "Q?" H 3191 3746 50  0000 L CNN
+F 1 "BC817" H 3191 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3200 3625 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 3000 3700 50  0001 L CNN
+	1    3000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC817 Q?
+U 1 1 5E423BF2
+P 4600 3700
+F 0 "Q?" H 4450 3850 50  0000 L CNN
+F 1 "BC817" H 4150 3550 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4800 3625 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 4600 3700 50  0001 L CNN
+	1    4600 3700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3500 3100 3350
+Wire Wire Line
+	3500 3350 3100 3350
+Connection ~ 3100 3350
+Wire Wire Line
+	3100 3350 3100 3200
+Wire Wire Line
+	4200 3350 4500 3350
+Wire Wire Line
+	4500 3350 4500 3200
+Wire Wire Line
+	4500 3350 4500 3500
+Connection ~ 4500 3350
+Wire Wire Line
+	4500 3900 4500 4000
+Wire Wire Line
+	4500 4000 4200 4000
+Connection ~ 4200 4000
+Wire Wire Line
+	3500 4000 3100 4000
+Wire Wire Line
+	3100 4000 3100 3900
+Connection ~ 3500 4000
+Wire Wire Line
+	3100 2800 3100 2700
+Wire Wire Line
+	3100 2700 3500 2700
+Connection ~ 3500 2700
+Wire Wire Line
+	4200 2700 4500 2700
+Wire Wire Line
+	4500 2700 4500 2800
+Connection ~ 4200 2700
+$Comp
+L Device:R_Small R?
+U 1 1 5E429C90
+P 2700 3000
+F 0 "R?" V 2504 3000 50  0000 C CNN
+F 1 "220" V 2595 3000 50  0000 C CNN
+F 2 "" H 2700 3000 50  0001 C CNN
+F 3 "~" H 2700 3000 50  0001 C CNN
+	1    2700 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E42A7AD
+P 2700 3700
+F 0 "R?" V 2504 3700 50  0000 C CNN
+F 1 "220" V 2595 3700 50  0000 C CNN
+F 2 "" H 2700 3700 50  0001 C CNN
+F 3 "~" H 2700 3700 50  0001 C CNN
+	1    2700 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E42ACB2
+P 4900 3000
+F 0 "R?" V 4704 3000 50  0000 C CNN
+F 1 "220" V 4795 3000 50  0000 C CNN
+F 2 "" H 4900 3000 50  0001 C CNN
+F 3 "~" H 4900 3000 50  0001 C CNN
+	1    4900 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E42B282
+P 4900 3700
+F 0 "R?" V 4704 3700 50  0000 C CNN
+F 1 "220" V 4795 3700 50  0000 C CNN
+F 2 "" H 4900 3700 50  0001 C CNN
+F 3 "~" H 4900 3700 50  0001 C CNN
+	1    4900 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 3000 2300 3000
+Wire Wire Line
+	2600 3700 2300 3700
+Wire Wire Line
+	5000 3700 5350 3700
+Wire Wire Line
+	5000 3000 5350 3000
+Text GLabel 5350 3000 2    50   Input ~ 0
+T1
+Text GLabel 5350 3700 2    50   Input ~ 0
+T2
+Text GLabel 2300 3700 0    50   Input ~ 0
+T3
+Text GLabel 2300 3000 0    50   Input ~ 0
+T4
 $EndSCHEMATC
