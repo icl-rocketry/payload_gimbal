@@ -1,0 +1,123 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Motor:Motor_DC M?
+U 1 1 5E41C8CC
+P 3800 3350
+F 0 "M?" V 4095 3300 50  0000 C CNN
+F 1 "Motor_DC" V 4004 3300 50  0000 C CNN
+F 2 "" H 3800 3260 50  0001 C CNN
+F 3 "~" H 3800 3260 50  0001 C CNN
+	1    3800 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5E41C8D2
+P 3500 2850
+F 0 "D?" V 3454 2929 50  0000 L CNN
+F 1 "D" V 3545 2929 50  0000 L CNN
+F 2 "" H 3500 2850 50  0001 C CNN
+F 3 "~" H 3500 2850 50  0001 C CNN
+	1    3500 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5E41C8D8
+P 4200 2850
+F 0 "D?" V 4154 2929 50  0000 L CNN
+F 1 "D" V 4245 2929 50  0000 L CNN
+F 2 "" H 4200 2850 50  0001 C CNN
+F 3 "~" H 4200 2850 50  0001 C CNN
+	1    4200 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5E41C8DE
+P 3500 3850
+F 0 "D?" V 3454 3929 50  0000 L CNN
+F 1 "D" V 3545 3929 50  0000 L CNN
+F 2 "" H 3500 3850 50  0001 C CNN
+F 3 "~" H 3500 3850 50  0001 C CNN
+	1    3500 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5E41C8E4
+P 4200 3850
+F 0 "D?" V 4154 3929 50  0000 L CNN
+F 1 "D" V 4245 3929 50  0000 L CNN
+F 2 "" H 4200 3850 50  0001 C CNN
+F 3 "~" H 4200 3850 50  0001 C CNN
+	1    4200 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E41C8EA
+P 3850 4200
+F 0 "#PWR?" H 3850 3950 50  0001 C CNN
+F 1 "GND" H 3855 4027 50  0000 C CNN
+F 2 "" H 3850 4200 50  0001 C CNN
+F 3 "" H 3850 4200 50  0001 C CNN
+	1    3850 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+10V #PWR?
+U 1 1 5E41C8F0
+P 3850 2550
+AR Path="/5DAD2180/5E41C8F0" Ref="#PWR?"  Part="1" 
+AR Path="/5E41C8F0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3850 2400 50  0001 C CNN
+F 1 "+10V" H 3865 2723 50  0000 C CNN
+F 2 "" H 3850 2550 50  0001 C CNN
+F 3 "" H 3850 2550 50  0001 C CNN
+	1    3850 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3000 4200 3350
+Wire Wire Line
+	3500 3000 3500 3350
+Wire Wire Line
+	3500 3350 3600 3350
+Connection ~ 3500 3350
+Wire Wire Line
+	3500 3350 3500 3700
+Wire Wire Line
+	4100 3350 4200 3350
+Connection ~ 4200 3350
+Wire Wire Line
+	4200 3350 4200 3700
+Wire Wire Line
+	3500 2700 3850 2700
+Wire Wire Line
+	3850 2550 3850 2700
+Connection ~ 3850 2700
+Wire Wire Line
+	3850 2700 4200 2700
+Wire Wire Line
+	3500 4000 3850 4000
+Wire Wire Line
+	3850 4200 3850 4000
+Connection ~ 3850 4000
+Wire Wire Line
+	3850 4000 4200 4000
+$EndSCHEMATC
