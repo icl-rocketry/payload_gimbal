@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 2
 Title ""
 Date ""
 Rev ""
@@ -898,10 +898,10 @@ $EndComp
 Wire Wire Line
 	4600 4750 4600 4700
 $Comp
-L Connector:Screw_Terminal_01x01 J?
+L Connector:Screw_Terminal_01x01 J2
 U 1 1 5E3B8F9F
 P 7750 4350
-F 0 "J?" H 7668 4125 50  0000 C CNN
+F 0 "J2" H 7668 4125 50  0000 C CNN
 F 1 "Screw_Terminal_01x01" H 7668 4216 50  0000 C CNN
 F 2 "" H 7750 4350 50  0001 C CNN
 F 3 "~" H 7750 4350 50  0001 C CNN
