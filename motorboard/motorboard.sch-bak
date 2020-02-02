@@ -20,17 +20,6 @@ F0 "power" 50
 F1 "power.sch" 50
 $EndSheet
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-AU U?
-U 1 1 5E39C3D6
-P 7500 2350
-F 0 "U?" H 7500 761 50  0000 C CNN
-F 1 "ATmega328P-AU" H 7500 670 50  0000 C CNN
-F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 7500 2350 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 7500 2350 50  0001 C CNN
-	1    7500 2350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR?
 U 1 1 5E39FBAE
 P 7500 750
@@ -45,7 +34,6 @@ Wire Wire Line
 	7500 850  7500 750 
 Wire Wire Line
 	7600 850  7500 850 
-Connection ~ 7500 850 
 $Comp
 L power:GND #PWR?
 U 1 1 5E3A146A
@@ -371,6 +359,16 @@ U 5E41532A
 F0 "H-Bridge" 50
 F1 "H-Bridge.sch" 50
 $EndSheet
-Wire Wire Line
-	8100 3150 8300 3150
+Connection ~ 7500 850 
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-AU U?
+U 1 1 5E39C3D6
+P 7500 2350
+F 0 "U?" H 7500 761 50  0000 C CNN
+F 1 "ATmega328P-AU" H 7500 670 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 7500 2350 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 7500 2350 50  0001 C CNN
+	1    7500 2350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

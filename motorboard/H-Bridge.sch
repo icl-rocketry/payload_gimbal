@@ -14,261 +14,112 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Motor:Motor_DC M?
-U 1 1 5E41C8CC
-P 3800 3350
-AR Path="/5E41C8CC" Ref="M?"  Part="1" 
-AR Path="/5E41532A/5E41C8CC" Ref="M?"  Part="1" 
-F 0 "M?" V 4095 3300 50  0000 C CNN
-F 1 "Motor_DC" V 4004 3300 50  0000 C CNN
-F 2 "" H 3800 3260 50  0001 C CNN
-F 3 "~" H 3800 3260 50  0001 C CNN
-	1    3800 3350
-	0    -1   -1   0   
+L Driver_Motor:TB6612FNG U?
+U 1 1 5E36F8D3
+P 8050 3350
+F 0 "U?" H 8050 4531 50  0000 C CNN
+F 1 "TB6612FNG" H 8050 4440 50  0000 C CNN
+F 2 "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm" H 8500 3950 50  0001 C CNN
+F 3 "https://toshiba.semicon-storage.com/us/product/linear/motordriver/detail.TB6612FNG.html" H 8500 3950 50  0001 C CNN
+	1    8050 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 4350 8150 4350
+Connection ~ 8150 4350
+Wire Wire Line
+	8150 4350 8250 4350
+Connection ~ 8250 4350
+Wire Wire Line
+	8250 4350 8350 4350
+$Comp
+L power:GND #PWR?
+U 1 1 5E3711A1
+P 8350 4450
+F 0 "#PWR?" H 8350 4200 50  0001 C CNN
+F 1 "GND" H 8355 4277 50  0000 C CNN
+F 2 "" H 8350 4450 50  0001 C CNN
+F 3 "" H 8350 4450 50  0001 C CNN
+	1    8350 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 4450 8350 4350
+Connection ~ 8350 4350
+Wire Wire Line
+	7750 4350 8050 4350
+Connection ~ 8050 4350
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E3739DF
+P 7150 2050
+F 0 "#PWR?" H 7150 1900 50  0001 C CNN
+F 1 "+3.3V" H 7165 2223 50  0000 C CNN
+F 2 "" H 7150 2050 50  0001 C CNN
+F 3 "" H 7150 2050 50  0001 C CNN
+	1    7150 2050
+	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D D?
-U 1 1 5E41C8D2
-P 3500 2850
-AR Path="/5E41C8D2" Ref="D?"  Part="1" 
-AR Path="/5E41532A/5E41C8D2" Ref="D?"  Part="1" 
-F 0 "D?" V 3454 2929 50  0000 L CNN
-F 1 "D" V 3545 2929 50  0000 L CNN
-F 2 "" H 3500 2850 50  0001 C CNN
-F 3 "~" H 3500 2850 50  0001 C CNN
-	1    3500 2850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:D D?
-U 1 1 5E41C8D8
-P 4200 2850
-AR Path="/5E41C8D8" Ref="D?"  Part="1" 
-AR Path="/5E41532A/5E41C8D8" Ref="D?"  Part="1" 
-F 0 "D?" V 4154 2929 50  0000 L CNN
-F 1 "D" V 4245 2929 50  0000 L CNN
-F 2 "" H 4200 2850 50  0001 C CNN
-F 3 "~" H 4200 2850 50  0001 C CNN
-	1    4200 2850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:D D?
-U 1 1 5E41C8DE
-P 3500 3850
-AR Path="/5E41C8DE" Ref="D?"  Part="1" 
-AR Path="/5E41532A/5E41C8DE" Ref="D?"  Part="1" 
-F 0 "D?" V 3454 3929 50  0000 L CNN
-F 1 "D" V 3545 3929 50  0000 L CNN
-F 2 "" H 3500 3850 50  0001 C CNN
-F 3 "~" H 3500 3850 50  0001 C CNN
-	1    3500 3850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:D D?
-U 1 1 5E41C8E4
-P 4200 3850
-AR Path="/5E41C8E4" Ref="D?"  Part="1" 
-AR Path="/5E41532A/5E41C8E4" Ref="D?"  Part="1" 
-F 0 "D?" V 4154 3929 50  0000 L CNN
-F 1 "D" V 4245 3929 50  0000 L CNN
-F 2 "" H 4200 3850 50  0001 C CNN
-F 3 "~" H 4200 3850 50  0001 C CNN
-	1    4200 3850
-	0    1    1    0   
+L Device:C_Small C?
+U 1 1 5E374198
+P 7150 2250
+F 0 "C?" H 7242 2296 50  0000 L CNN
+F 1 "10u" H 7242 2205 50  0000 L CNN
+F 2 "" H 7150 2250 50  0001 C CNN
+F 3 "~" H 7150 2250 50  0001 C CNN
+	1    7150 2250
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
-U 1 1 5E41C8EA
-P 3850 4200
-AR Path="/5E41C8EA" Ref="#PWR?"  Part="1" 
-AR Path="/5E41532A/5E41C8EA" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3850 3950 50  0001 C CNN
-F 1 "GND" H 3855 4027 50  0000 C CNN
-F 2 "" H 3850 4200 50  0001 C CNN
-F 3 "" H 3850 4200 50  0001 C CNN
-	1    3850 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+10V #PWR?
-U 1 1 5E41C8F0
-P 3850 2550
-AR Path="/5DAD2180/5E41C8F0" Ref="#PWR?"  Part="1" 
-AR Path="/5E41C8F0" Ref="#PWR?"  Part="1" 
-AR Path="/5E41532A/5E41C8F0" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3850 2400 50  0001 C CNN
-F 1 "+10V" H 3865 2723 50  0000 C CNN
-F 2 "" H 3850 2550 50  0001 C CNN
-F 3 "" H 3850 2550 50  0001 C CNN
-	1    3850 2550
+U 1 1 5E374E93
+P 7150 2500
+F 0 "#PWR?" H 7150 2250 50  0001 C CNN
+F 1 "GND" H 7155 2327 50  0000 C CNN
+F 2 "" H 7150 2500 50  0001 C CNN
+F 3 "" H 7150 2500 50  0001 C CNN
+	1    7150 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 3000 4200 3350
+	7150 2050 7150 2150
 Wire Wire Line
-	3500 3000 3500 3350
+	7150 2350 7150 2500
 Wire Wire Line
-	3500 3350 3600 3350
-Connection ~ 3500 3350
+	7150 2150 7400 2150
+Connection ~ 7150 2150
 Wire Wire Line
-	3500 3350 3500 3700
-Wire Wire Line
-	4100 3350 4200 3350
-Connection ~ 4200 3350
-Wire Wire Line
-	4200 3350 4200 3700
-Wire Wire Line
-	3500 2700 3850 2700
-Wire Wire Line
-	3850 2550 3850 2700
-Connection ~ 3850 2700
-Wire Wire Line
-	3850 2700 4200 2700
-Wire Wire Line
-	3500 4000 3850 4000
-Wire Wire Line
-	3850 4200 3850 4000
-Connection ~ 3850 4000
-Wire Wire Line
-	3850 4000 4200 4000
+	7750 2150 7750 2350
 $Comp
-L Transistor_BJT:BC807 Q?
-U 1 1 5E420AAC
-P 3000 3000
-F 0 "Q?" H 3191 2954 50  0000 L CNN
-F 1 "BC807" H 3191 3045 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3200 2925 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC807.pdf" H 3000 3000 50  0001 L CNN
-	1    3000 3000
-	1    0    0    1   
-$EndComp
-$Comp
-L Transistor_BJT:BC807 Q?
-U 1 1 5E421FC8
-P 4600 3000
-F 0 "Q?" H 4450 2850 50  0000 L CNN
-F 1 "BC807" H 4150 3150 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4800 2925 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC807.pdf" H 4600 3000 50  0001 L CNN
-	1    4600 3000
-	-1   0    0    1   
-$EndComp
-$Comp
-L Transistor_BJT:BC817 Q?
-U 1 1 5E423092
-P 3000 3700
-F 0 "Q?" H 3191 3746 50  0000 L CNN
-F 1 "BC817" H 3191 3655 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3200 3625 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 3000 3700 50  0001 L CNN
-	1    3000 3700
+L Device:R_Small R?
+U 1 1 5E375898
+P 7400 2600
+F 0 "R?" H 7459 2646 50  0000 L CNN
+F 1 "10k" H 7450 2550 50  0000 L CNN
+F 2 "" H 7400 2600 50  0001 C CNN
+F 3 "~" H 7400 2600 50  0001 C CNN
+	1    7400 2600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7400 2500 7400 2150
+Connection ~ 7400 2150
+Wire Wire Line
+	7400 2150 7750 2150
+Wire Wire Line
+	7400 2700 7400 2950
+Wire Wire Line
+	7400 2950 7450 2950
 $Comp
-L Transistor_BJT:BC817 Q?
-U 1 1 5E423BF2
-P 4600 3700
-F 0 "Q?" H 4450 3850 50  0000 L CNN
-F 1 "BC817" H 4150 3550 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4800 3625 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 4600 3700 50  0001 L CNN
-	1    4600 3700
-	-1   0    0    -1  
+L Motor:Motor_DC M?
+U 1 1 5E3797EE
+P 3050 5250
+F 0 "M?" H 3208 5246 50  0000 L CNN
+F 1 "Motor_DC" H 3208 5155 50  0000 L CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_1x01_P2.00mm_Vertical" H 3050 5160 50  0001 C CNN
+F 3 "~" H 3050 5160 50  0001 C CNN
+	1    3050 5250
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3100 3500 3100 3350
-Wire Wire Line
-	3500 3350 3100 3350
-Connection ~ 3100 3350
-Wire Wire Line
-	3100 3350 3100 3200
-Wire Wire Line
-	4200 3350 4500 3350
-Wire Wire Line
-	4500 3350 4500 3200
-Wire Wire Line
-	4500 3350 4500 3500
-Connection ~ 4500 3350
-Wire Wire Line
-	4500 3900 4500 4000
-Wire Wire Line
-	4500 4000 4200 4000
-Connection ~ 4200 4000
-Wire Wire Line
-	3500 4000 3100 4000
-Wire Wire Line
-	3100 4000 3100 3900
-Connection ~ 3500 4000
-Wire Wire Line
-	3100 2800 3100 2700
-Wire Wire Line
-	3100 2700 3500 2700
-Connection ~ 3500 2700
-Wire Wire Line
-	4200 2700 4500 2700
-Wire Wire Line
-	4500 2700 4500 2800
-Connection ~ 4200 2700
-$Comp
-L Device:R_Small R?
-U 1 1 5E429C90
-P 2700 3000
-F 0 "R?" V 2504 3000 50  0000 C CNN
-F 1 "220" V 2595 3000 50  0000 C CNN
-F 2 "" H 2700 3000 50  0001 C CNN
-F 3 "~" H 2700 3000 50  0001 C CNN
-	1    2700 3000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5E42A7AD
-P 2700 3700
-F 0 "R?" V 2504 3700 50  0000 C CNN
-F 1 "220" V 2595 3700 50  0000 C CNN
-F 2 "" H 2700 3700 50  0001 C CNN
-F 3 "~" H 2700 3700 50  0001 C CNN
-	1    2700 3700
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5E42ACB2
-P 4900 3000
-F 0 "R?" V 4704 3000 50  0000 C CNN
-F 1 "220" V 4795 3000 50  0000 C CNN
-F 2 "" H 4900 3000 50  0001 C CNN
-F 3 "~" H 4900 3000 50  0001 C CNN
-	1    4900 3000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5E42B282
-P 4900 3700
-F 0 "R?" V 4704 3700 50  0000 C CNN
-F 1 "220" V 4795 3700 50  0000 C CNN
-F 2 "" H 4900 3700 50  0001 C CNN
-F 3 "~" H 4900 3700 50  0001 C CNN
-	1    4900 3700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2600 3000 2300 3000
-Wire Wire Line
-	2600 3700 2300 3700
-Wire Wire Line
-	5000 3700 5350 3700
-Wire Wire Line
-	5000 3000 5350 3000
-Text GLabel 5350 3000 2    50   Input ~ 0
-T1
-Text GLabel 5350 3700 2    50   Input ~ 0
-T2
-Text GLabel 2300 3700 0    50   Input ~ 0
-T3
-Text GLabel 2300 3000 0    50   Input ~ 0
-T4
 $EndSCHEMATC
