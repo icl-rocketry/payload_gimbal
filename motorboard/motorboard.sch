@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 10300 5750 550  400 
+S 9300 5400 550  400 
 U 5DAD2180
 F0 "power" 50
 F1 "power.sch" 50
@@ -361,19 +361,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20w
 	1    9200 2250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Motor:Motor_DC M?
-U 1 1 5E38606B
-P 5900 2400
-AR Path="/5E41532A/5E38606B" Ref="M?"  Part="1" 
-AR Path="/5E38606B" Ref="M1"  Part="1" 
-F 0 "M1" V 5605 2350 50  0000 C CNN
-F 1 "Motor_DC" V 5696 2350 50  0000 C CNN
-F 2 "Connector_PinSocket_2.00mm:PinSocket_1x01_P2.00mm_Vertical" H 5900 2310 50  0001 C CNN
-F 3 "~" H 5900 2310 50  0001 C CNN
-	1    5900 2400
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	9800 3150 10000 3150
 Wire Wire Line
@@ -583,14 +570,8 @@ Text GLabel 3150 6250 2    50   Input ~ 0
 BO2
 Text Notes 850  7550 0    207  ~ 0
 H-Bridge
-Wire Notes Line
-	3800 700  3800 7600
 Text Notes 800  3950 0    207  ~ 0
 USB Interface
-Wire Wire Line
-	9800 2050 10000 2050
-Wire Wire Line
-	9800 2150 10000 2150
 Wire Wire Line
 	9800 2950 10000 2950
 Wire Wire Line
@@ -599,20 +580,152 @@ Text GLabel 10000 2950 2    50   Input ~ 0
 IMU1
 Text GLabel 10000 3050 2    50   Input ~ 0
 IMU2
-Text GLabel 10000 2050 2    50   Input ~ 0
-ENC1
-Text GLabel 10000 2150 2    50   Input ~ 0
-ENC2
 Text Notes 7950 4450 0    207  ~ 0
 ATMega328P-AU
 Wire Notes Line
 	7800 4600 11100 4600
-Wire Notes Line
-	700  4150 7800 4150
-Text Notes 4050 3950 0    207  ~ 0
+Text Notes 4050 2900 0    207  ~ 0
 Stepper Motor
-Wire Notes Line
-	7800 700  7800 6450
 Text Notes 4100 7550 0    207  ~ 0
 Encoder
+Wire Notes Line
+	3800 1600 7800 1600
+Text Notes 4400 1400 0    286  ~ 57
+MOTORBOARD
+Text Notes 5000 900  0    128  ~ 26
+THE INCREDIBLE
+$Comp
+L AS5600:AS5600-ASOM U?
+U 1 1 5E3DA57E
+P 5750 5100
+F 0 "U?" H 5750 5970 50  0000 C CNN
+F 1 "AS5600-ASOM" H 5750 5879 50  0000 C CNN
+F 2 "SOIC127P600X175-8N" H 5750 5100 50  0001 L BNN
+F 3 "ams" H 5750 5100 50  0001 L BNN
+F 4 "SOIC127P600X175-8N" H 5750 5100 50  0001 L BNN "Field4"
+	1    5750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 5E3DBB95
+P 5600 2100
+F 0 "J?" H 5708 2381 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 5708 2290 50  0000 C CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_1x04_P2.00mm_Vertical" H 5600 2100 50  0001 C CNN
+F 3 "~" H 5600 2100 50  0001 C CNN
+	1    5600 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2000 6000 2000
+Wire Wire Line
+	5800 2100 6000 2100
+Wire Wire Line
+	5800 2200 6000 2200
+Wire Wire Line
+	5800 2300 6000 2300
+Text GLabel 6000 2000 2    50   Input ~ 0
+AO1
+Text GLabel 6000 2100 2    50   Input ~ 0
+AO2
+Text GLabel 6000 2200 2    50   Input ~ 0
+BO1
+Text GLabel 6000 2300 2    50   Input ~ 0
+BO2
+Wire Notes Line
+	3800 4100 750  4100
+Wire Notes Line
+	3800 700  3800 7600
+Wire Notes Line
+	3800 3150 7800 3150
+Wire Notes Line
+	7800 700  7800 6450
+Text Notes 6250 2050 0    50   ~ 0
+White
+Text Notes 6250 2150 0    50   ~ 0
+Blue
+Text Notes 6250 2250 0    50   ~ 0
+Red
+Text Notes 6250 2350 0    50   ~ 0
+Yellow
+Wire Wire Line
+	9800 2350 10000 2350
+Wire Wire Line
+	9800 2450 10000 2450
+Text GLabel 10000 2350 2    50   Input ~ 0
+SCL
+Text GLabel 10000 2450 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	5050 4800 4850 4800
+Wire Wire Line
+	5050 5000 4850 5000
+Wire Wire Line
+	5050 5400 4850 5400
+Wire Wire Line
+	6450 5600 6450 5750
+Wire Wire Line
+	9800 2250 10000 2250
+Text GLabel 10000 2250 2    50   Input ~ 0
+ENC
+Wire Wire Line
+	6450 4800 6650 4800
+Text GLabel 6650 4800 2    50   Input ~ 0
+ENC
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E41B8C5
+P 6450 4350
+F 0 "#PWR?" H 6450 4200 50  0001 C CNN
+F 1 "+3V3" H 6465 4523 50  0000 C CNN
+F 2 "" H 6450 4350 50  0001 C CNN
+F 3 "" H 6450 4350 50  0001 C CNN
+	1    6450 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E41C064
+P 6450 5750
+F 0 "#PWR?" H 6450 5500 50  0001 C CNN
+F 1 "GND" H 6455 5577 50  0000 C CNN
+F 2 "" H 6450 5750 50  0001 C CNN
+F 3 "" H 6450 5750 50  0001 C CNN
+	1    6450 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4600 6450 4500
+Wire Wire Line
+	6450 4500 6650 4500
+Connection ~ 6450 4500
+$Comp
+L Device:C_Small C?
+U 1 1 5E421ADD
+P 6750 4500
+F 0 "C?" V 6979 4500 50  0000 C CNN
+F 1 "100n" V 6888 4500 50  0000 C CNN
+F 2 "" H 6750 4500 50  0001 C CNN
+F 3 "~" H 6750 4500 50  0001 C CNN
+	1    6750 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E422555
+P 7000 4550
+F 0 "#PWR?" H 7000 4300 50  0001 C CNN
+F 1 "GND" H 7005 4377 50  0000 C CNN
+F 2 "" H 7000 4550 50  0001 C CNN
+F 3 "" H 7000 4550 50  0001 C CNN
+	1    7000 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 4500 7000 4500
+Wire Wire Line
+	7000 4500 7000 4550
+Wire Wire Line
+	6450 4500 6450 4350
 $EndSCHEMATC
