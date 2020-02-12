@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Power"
+Date "2020-02-12"
+Rev "2"
+Comp "Raihaan Usman"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -486,4 +486,67 @@ F 3 "" H 1600 3750 50  0001 C CNN
 $EndComp
 Text Notes 4700 2150 0    303  ~ 61
 Powa!!
+$Comp
+L Jumper:SolderJumper_3_Open JP?
+U 1 1 5E8D85AC
+P 3850 7000
+F 0 "JP?" V 3896 7067 50  0000 L CNN
+F 1 "Jumper" V 3805 7067 50  0000 L CNN
+F 2 "" H 3850 7000 50  0001 C CNN
+F 3 "~" H 3850 7000 50  0001 C CNN
+	1    3850 7000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5E8D9BD5
+P 1650 6800
+F 0 "J?" H 1700 6900 50  0000 C CNN
+F 1 "Separate LiPo" V 1550 6750 50  0000 C CNN
+F 2 "" H 1650 6800 50  0001 C CNN
+F 3 "~" H 1650 6800 50  0001 C CNN
+	1    1650 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 6800 2050 6800
+Wire Wire Line
+	1850 6900 1950 6900
+Wire Wire Line
+	1950 6900 1950 7000
+$Comp
+L power:GND #PWR?
+U 1 1 5E8DC9A0
+P 1950 7000
+F 0 "#PWR?" H 1950 6750 50  0001 C CNN
+F 1 "GND" H 1955 6827 50  0000 C CNN
+F 2 "" H 1950 7000 50  0001 C CNN
+F 3 "" H 1950 7000 50  0001 C CNN
+	1    1950 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 5E8DDA00
+P 2200 6800
+F 0 "D?" H 2200 6584 50  0000 C CNN
+F 1 "D_Schottky" H 2200 6675 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 2200 6800 50  0001 C CNN
+F 3 "~" H 2200 6800 50  0001 C CNN
+	1    2200 6800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2350 6800 2550 6800
+$Comp
+L power:VDD #PWR?
+U 1 1 5E8E20B4
+P 2550 6800
+F 0 "#PWR?" H 2550 6650 50  0001 C CNN
+F 1 "VDD" H 2567 6973 50  0000 C CNN
+F 2 "" H 2550 6800 50  0001 C CNN
+F 3 "" H 2550 6800 50  0001 C CNN
+	1    2550 6800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
