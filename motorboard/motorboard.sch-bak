@@ -647,17 +647,6 @@ Text Notes 5800 2900 0    50   ~ 0
 Blue
 Text Notes 5800 3000 0    50   ~ 0
 Red
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5E52FFC7
-P 6450 2350
-F 0 "#PWR?" H 6450 2200 50  0001 C CNN
-F 1 "+3V3" H 6350 2500 50  0000 C CNN
-F 2 "" H 6450 2350 50  0001 C CNN
-F 3 "" H 6450 2350 50  0001 C CNN
-	1    6450 2350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4500 2450 4400 2450
 Wire Wire Line
@@ -937,54 +926,12 @@ F 3 "https://www.pololu.com/product/2980/pictures" H 5000 2450 50  0001 C CNN
 	1    4900 2750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP?
-U 1 1 5E72A5E4
-P 7250 2650
-F 0 "JP?" V 7100 2700 50  0000 L CNN
-F 1 "Jumper" H 7150 2750 50  0000 L CNN
-F 2 "" H 7250 2650 50  0001 C CNN
-F 3 "~" H 7250 2650 50  0001 C CNN
-	1    7250 2650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP?
-U 1 1 5E72EB25
-P 6450 2650
-F 0 "JP?" V 6300 2700 50  0000 L CNN
-F 1 "Jumper" H 6350 2750 50  0000 L CNN
-F 2 "" H 6450 2650 50  0001 C CNN
-F 3 "~" H 6450 2650 50  0001 C CNN
-	1    6450 2650
-	0    -1   -1   0   
-$EndComp
 Text GLabel 4500 3050 0    50   Input ~ 0
 MS1
 Text GLabel 4500 3150 0    50   Input ~ 0
 MS2
 Text GLabel 4500 3250 0    50   Input ~ 0
 MS3
-$Comp
-L Jumper:SolderJumper_3_Open JP?
-U 1 1 5E736A16
-P 6850 3050
-F 0 "JP?" V 6700 3100 50  0000 L CNN
-F 1 "Jumper" H 6750 3150 50  0000 L CNN
-F 2 "" H 6850 3050 50  0001 C CNN
-F 3 "~" H 6850 3050 50  0001 C CNN
-	1    6850 3050
-	0    -1   -1   0   
-$EndComp
-Text GLabel 7000 3050 2    50   Input ~ 0
-MS1
-Text GLabel 7400 2650 2    50   Input ~ 0
-MS2
-Text GLabel 6600 2650 2    50   Input ~ 0
-MS3
-Connection ~ 6850 2450
-Wire Wire Line
-	6850 2850 6850 2450
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5E766FF2
@@ -1035,43 +982,6 @@ Wire Wire Line
 	10850 2700 10850 2600
 Wire Wire Line
 	10850 2400 10850 2300
-Wire Wire Line
-	6450 2450 6850 2450
-Wire Wire Line
-	6850 2450 7250 2450
-$Comp
-L power:GND #PWR?
-U 1 1 5E7A289F
-P 6450 2850
-F 0 "#PWR?" H 6450 2600 50  0001 C CNN
-F 1 "GND" H 6600 2750 50  0000 C CNN
-F 2 "" H 6450 2850 50  0001 C CNN
-F 3 "" H 6450 2850 50  0001 C CNN
-	1    6450 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E7A3015
-P 6850 3200
-F 0 "#PWR?" H 6850 2950 50  0001 C CNN
-F 1 "GND" H 7000 3100 50  0000 C CNN
-F 2 "" H 6850 3200 50  0001 C CNN
-F 3 "" H 6850 3200 50  0001 C CNN
-	1    6850 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E7A32E6
-P 7250 2850
-F 0 "#PWR?" H 7250 2600 50  0001 C CNN
-F 1 "GND" H 7400 2750 50  0000 C CNN
-F 2 "" H 7250 2850 50  0001 C CNN
-F 3 "" H 7250 2850 50  0001 C CNN
-	1    7250 2850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9900 2350 10100 2350
 Text GLabel 10100 2350 2    50   Input ~ 0
@@ -1184,7 +1094,99 @@ Wire Wire Line
 	2650 6800 2850 6800
 Wire Wire Line
 	8500 2650 8700 2650
+$Comp
+L power:GND #PWR?
+U 1 1 5E8ED772
+P 7250 3200
+F 0 "#PWR?" H 7250 2950 50  0001 C CNN
+F 1 "GND" H 7400 3100 50  0000 C CNN
+F 2 "" H 7250 3200 50  0001 C CNN
+F 3 "" H 7250 3200 50  0001 C CNN
+	1    7250 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 6950 2350 2    50   Input ~ 0
+MS3
+Text GLabel 6950 2950 2    50   Input ~ 0
+MS2
+Text GLabel 6950 3250 2    50   Input ~ 0
+MS1
+$Comp
+L Jumper:SolderJumper_3_Open JP?
+U 1 1 5E8ED785
+P 6850 2500
+F 0 "JP?" H 6600 2600 50  0000 L CNN
+F 1 "MS3" H 6900 2400 50  0000 L CNN
+F 2 "" H 6850 2500 50  0001 C CNN
+F 3 "~" H 6850 2500 50  0001 C CNN
+	1    6850 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Open JP?
+U 1 1 5E8ED78B
+P 6850 2800
+F 0 "JP?" H 6600 2850 50  0000 L CNN
+F 1 "MS2" H 6900 2900 50  0000 L CNN
+F 2 "" H 6850 2800 50  0001 C CNN
+F 3 "~" H 6850 2800 50  0001 C CNN
+	1    6850 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E8ED791
+P 6450 2400
+F 0 "#PWR?" H 6450 2250 50  0001 C CNN
+F 1 "+3V3" H 6350 2550 50  0000 C CNN
+F 2 "" H 6450 2400 50  0001 C CNN
+F 3 "" H 6450 2400 50  0001 C CNN
+	1    6450 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Open JP?
+U 1 1 5E8ED77F
+P 6850 3100
+F 0 "JP?" H 6650 3000 50  0000 L CNN
+F 1 "MS1" H 6650 3200 50  0000 L CNN
+F 2 "" H 6850 3100 50  0001 C CNN
+F 3 "~" H 6850 3100 50  0001 C CNN
+	1    6850 3100
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6450 2450 6450 2350
-Connection ~ 6450 2450
+	7050 3100 7250 3100
+Wire Wire Line
+	7250 3100 7250 3200
+Wire Wire Line
+	7050 2500 7250 2500
+Wire Wire Line
+	7250 2800 7250 3100
+Wire Wire Line
+	7050 2800 7250 2800
+Connection ~ 7250 3100
+Wire Wire Line
+	7250 2800 7250 2500
+Connection ~ 7250 2800
+Wire Wire Line
+	6950 3250 6850 3250
+Wire Wire Line
+	6950 2950 6850 2950
+Wire Wire Line
+	6950 2350 6850 2350
+Wire Wire Line
+	6450 2500 6650 2500
+Wire Wire Line
+	6650 3100 6450 3100
+Connection ~ 6450 2500
+Wire Wire Line
+	6650 2800 6450 2800
+Wire Wire Line
+	6450 2500 6450 2800
+Connection ~ 6450 2800
+Wire Wire Line
+	6450 2800 6450 3100
+Wire Wire Line
+	6450 2400 6450 2500
 $EndSCHEMATC
