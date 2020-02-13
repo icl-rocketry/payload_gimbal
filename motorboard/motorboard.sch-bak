@@ -679,29 +679,14 @@ Text GLabel 5050 5300 2    50   Input ~ 0
 TX
 Text Notes 4000 6000 0    207  ~ 0
 Connectors
-$Comp
-L Device:Crystal Y?
-U 1 1 5E5C2710
-P 8450 1650
-F 0 "Y?" V 8450 1500 50  0000 R CNN
-F 1 "8MHz" V 8650 1750 50  0000 R CNN
-F 2 "" H 8450 1650 50  0001 C CNN
-F 3 "~" H 8450 1650 50  0001 C CNN
-	1    8450 1650
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8700 1550 8650 1550
 Wire Wire Line
 	8650 1550 8650 1500
 Wire Wire Line
-	8650 1500 8450 1500
-Wire Wire Line
 	8700 1750 8650 1750
 Wire Wire Line
 	8650 1750 8650 1800
-Wire Wire Line
-	8650 1800 8450 1800
 $Comp
 L power:GND #PWR?
 U 1 1 5E5CB4A6
@@ -735,12 +720,6 @@ F 3 "~" H 8200 1800 50  0001 C CNN
 	1    8200 1800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8450 1500 8300 1500
-Connection ~ 8450 1500
-Wire Wire Line
-	8450 1800 8300 1800
-Connection ~ 8450 1800
 Wire Wire Line
 	8100 1800 8050 1800
 Wire Wire Line
@@ -1189,4 +1168,25 @@ Wire Wire Line
 	6450 2800 6450 3100
 Wire Wire Line
 	6450 2400 6450 2500
+Connection ~ 8450 1800
+Connection ~ 8450 1500
+Wire Wire Line
+	8450 1800 8300 1800
+Wire Wire Line
+	8650 1800 8450 1800
+Wire Wire Line
+	8450 1500 8300 1500
+Wire Wire Line
+	8650 1500 8450 1500
+$Comp
+L Device:Crystal Y?
+U 1 1 5E5C2710
+P 8450 1650
+F 0 "Y?" V 8450 1500 50  0000 R CNN
+F 1 "8MHz" V 8650 1750 50  0000 R CNN
+F 2 "" H 8450 1650 50  0001 C CNN
+F 3 "~" H 8450 1650 50  0001 C CNN
+	1    8450 1650
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
