@@ -108,8 +108,6 @@ F 3 "" H 8700 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8700 1150 8700 1250
-Wire Wire Line
 	9900 2950 10100 2950
 Wire Wire Line
 	9900 2250 10100 2250
@@ -769,11 +767,8 @@ F 3 "" H 10150 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8700 1250 8550 1250
-Connection ~ 8700 1250
-Wire Wire Line
-	8700 1250 8700 1350
-Text GLabel 8550 1250 0    50   Input ~ 0
+	8700 1200 8550 1200
+Text GLabel 8550 1200 0    50   Input ~ 0
 RST
 Wire Wire Line
 	8050 1800 8050 1900
@@ -1189,4 +1184,9 @@ F 3 "~" H 8450 1650 50  0001 C CNN
 	1    8450 1650
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	8700 1150 8700 1200
+Connection ~ 8700 1200
+Wire Wire Line
+	8700 1200 8700 1350
 $EndSCHEMATC
