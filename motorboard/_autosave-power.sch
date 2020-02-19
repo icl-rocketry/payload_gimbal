@@ -132,7 +132,7 @@ AR Path="/5DE40F3B" Ref="U?"  Part="1"
 AR Path="/5DAD2180/5DE40F3B" Ref="U4"  Part="1" 
 F 0 "U4" H 6950 4716 50  0000 C CNN
 F 1 "TPS63070" H 6950 4625 50  0000 C CNN
-F 2 "iclr-fp:Texas_PowerVFQFN_15" H 6800 4050 50  0001 L BNN
+F 2 "main:Texas_PowerVFQFN_15" H 6800 4050 50  0001 L BNN
 F 3 "TPS63070RNMT" H 6950 4050 50  0001 L BNN
 F 4 "https://www.digikey.com/product-detail/en/texas-instruments/TPS63070RNMT/296-44764-1-ND/6193751?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 6800 4050 50  0001 L BNN "Field4"
 F 5 "296-44764-1-ND" H 6800 4050 50  0001 L BNN "Field5"
