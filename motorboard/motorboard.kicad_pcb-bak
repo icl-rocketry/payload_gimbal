@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 13)
+    (drawings 14)
     (tracks 694)
     (zones 0)
     (modules 72)
@@ -4347,6 +4347,9 @@
     )
   )
 
+  (gr_text "Redstone Powered" (at 154.66 109.06) (layer B.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
+  )
   (gr_text "Spare Thing" (at 182.88 93.98) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
