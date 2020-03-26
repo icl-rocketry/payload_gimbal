@@ -760,19 +760,6 @@ F 3 "" H 2850 1550 50  0001 C CNN
 	1    2850 1550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 5E649C23
-P 2500 1400
-AR Path="/5DAD2180/5E649C23" Ref="J?"  Part="1" 
-AR Path="/5E649C23" Ref="J4"  Part="1" 
-F 0 "J4" H 2418 1617 50  0000 C CNN
-F 1 "LiPo" H 2418 1526 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2500 1400 50  0001 C CNN
-F 3 "~" H 2500 1400 50  0001 C CNN
-	1    2500 1400
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	2850 1350 2850 1400
 Wire Wire Line
@@ -904,8 +891,6 @@ NoConn ~ 9900 3550
 NoConn ~ 9900 3250
 NoConn ~ 9900 3150
 NoConn ~ 9900 3050
-NoConn ~ 9900 1850
-NoConn ~ 9900 1750
 NoConn ~ 9900 1350
 Text GLabel 10000 4150 2    50   Input ~ 0
 A1
@@ -1193,10 +1178,10 @@ F 3 "" H 2400 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0102
 U 1 1 5E745145
 P 1650 1000
-F 0 "#PWR?" H 1650 850 50  0001 C CNN
+F 0 "#PWR0102" H 1650 850 50  0001 C CNN
 F 1 "+5V" H 1665 1173 50  0000 C CNN
 F 2 "" H 1650 1000 50  0001 C CNN
 F 3 "" H 1650 1000 50  0001 C CNN
@@ -1208,4 +1193,25 @@ Wire Wire Line
 Connection ~ 1650 1100
 Wire Wire Line
 	1650 1100 1800 1100
+Text GLabel 10100 1750 2    50   Input ~ 0
+DIR
+Text GLabel 10100 1850 2    50   Input ~ 0
+STEP
+Wire Wire Line
+	10100 1750 9900 1750
+Wire Wire Line
+	10100 1850 9900 1850
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5E807167
+P 2500 1400
+AR Path="/5DAD2180/5E807167" Ref="J?"  Part="1" 
+AR Path="/5E807167" Ref="J4"  Part="1" 
+F 0 "J4" H 2550 1500 50  0000 C CNN
+F 1 "LiPo" V 2400 1350 50  0000 C CNN
+F 2 "xt30:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal" H 2500 1400 50  0001 C CNN
+F 3 "~" H 2500 1400 50  0001 C CNN
+	1    2500 1400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
