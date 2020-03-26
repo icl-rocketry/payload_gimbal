@@ -944,21 +944,21 @@ Wire Notes Line
 Wire Wire Line
 	9300 4650 9300 4700
 Connection ~ 9300 4650
-Text GLabel 1650 6600 2    50   Input ~ 0
+Text GLabel 1600 6700 2    50   Input ~ 0
 1B
-Text GLabel 1650 6800 2    50   Input ~ 0
+Text GLabel 1600 6800 2    50   Input ~ 0
 1A
-Text GLabel 1650 6900 2    50   Input ~ 0
+Text GLabel 1600 6900 2    50   Input ~ 0
 2A
-Text GLabel 1650 7100 2    50   Input ~ 0
+Text GLabel 1600 7000 2    50   Input ~ 0
 2B
-Text Notes 1850 6650 0    50   ~ 0
+Text Notes 1800 6750 0    50   ~ 0
 Black
-Text Notes 1850 6850 0    50   ~ 0
+Text Notes 1800 6850 0    50   ~ 0
 Green
-Text Notes 1850 6950 0    50   ~ 0
+Text Notes 1800 6950 0    50   ~ 0
 Blue
-Text Notes 1850 7150 0    50   ~ 0
+Text Notes 1800 7050 0    50   ~ 0
 Red
 $Comp
 L Connector:Conn_01x02_Male J3
@@ -1092,7 +1092,7 @@ U 1 1 5E5C2710
 P 8450 1650
 F 0 "Y1" V 8450 1500 50  0000 R CNN
 F 1 "8MHz" V 8650 1750 50  0000 R CNN
-F 2 "Crystal:Crystal_HC18-U_Vertical" H 8450 1650 50  0001 C CNN
+F 2 "Crystal:Crystal_HC49-4H_Vertical" H 8450 1650 50  0001 C CNN
 F 3 "~" H 8450 1650 50  0001 C CNN
 	1    8450 1650
 	0    -1   -1   0   
@@ -1120,27 +1120,14 @@ Wire Wire Line
 	5550 6650 5750 6650
 Wire Wire Line
 	5750 6650 5750 6600
-$Comp
-L Connector:Conn_01x06_Male J1
-U 1 1 5E510B96
-P 1300 6800
-F 0 "J1" H 1200 7200 50  0000 C CNN
-F 1 "Stepper" H 1250 7100 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1300 6800 50  0001 C CNN
-F 3 "~" H 1300 6800 50  0001 C CNN
-	1    1300 6800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1500 7100 1650 7100
+	1450 7000 1600 7000
 Wire Wire Line
-	1500 6900 1650 6900
+	1450 6900 1600 6900
 Wire Wire Line
-	1500 6800 1650 6800
+	1450 6800 1600 6800
 Wire Wire Line
-	1500 6600 1650 6600
-NoConn ~ 1500 6700
-NoConn ~ 1500 7000
+	1450 6700 1600 6700
 $Comp
 L Connector:Conn_01x02_Male J5
 U 1 1 5E54DBD6
@@ -1209,9 +1196,21 @@ AR Path="/5DAD2180/5E807167" Ref="J?"  Part="1"
 AR Path="/5E807167" Ref="J4"  Part="1" 
 F 0 "J4" H 2550 1500 50  0000 C CNN
 F 1 "LiPo" V 2400 1350 50  0000 C CNN
-F 2 "xt30:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal" H 2500 1400 50  0001 C CNN
+F 2 "xt30:AMASS_XT30UPB-F_1x02_P5.0mm_Vertical" H 2500 1400 50  0001 C CNN
 F 3 "~" H 2500 1400 50  0001 C CNN
 	1    2500 1400
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 5E510B96
+P 1250 6800
+F 0 "J1" H 1050 7100 50  0000 C CNN
+F 1 "Stepper" H 1100 7000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1250 6800 50  0001 C CNN
+F 3 "~" H 1250 6800 50  0001 C CNN
+	1    1250 6800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4500 2650
 $EndSCHEMATC

@@ -438,17 +438,6 @@ F 3 "" H 1600 3700 50  0001 C CNN
 $EndComp
 Text Notes 4700 2150 0    303  ~ 61
 Powa!!
-$Comp
-L Connector:Conn_01x02_Male J8
-U 1 1 5E8D9BD5
-P 1800 5850
-F 0 "J8" H 1850 5950 50  0000 C CNN
-F 1 "Separate LiPo" V 1700 5800 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1800 5850 50  0001 C CNN
-F 3 "~" H 1800 5850 50  0001 C CNN
-	1    1800 5850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2000 5950 2100 5950
 Wire Wire Line
@@ -564,4 +553,17 @@ Wire Wire Line
 	6400 4550 6250 4550
 Wire Wire Line
 	6250 4550 6250 4500
+$Comp
+L Connector_Generic:Conn_01x02 J8
+U 1 1 5E803995
+P 1800 5850
+AR Path="/5DAD2180/5E803995" Ref="J8"  Part="1" 
+AR Path="/5E803995" Ref="J?"  Part="1" 
+F 0 "J8" H 1800 6000 50  0000 C CNN
+F 1 "Separate LiPo" V 1950 5800 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1800 5850 50  0001 C CNN
+F 3 "~" H 1800 5850 50  0001 C CNN
+	1    1800 5850
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
